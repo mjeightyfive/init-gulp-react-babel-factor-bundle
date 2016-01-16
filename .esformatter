@@ -1,0 +1,20 @@
+{
+    "root": true,
+    "quotes": {
+        "type": "single"
+    },
+    "indent": {
+        "value": "    "
+    },
+    "whiteSpace": {
+        "removeTrailing": 1,
+        "before": {
+            "IfStatementConditionalOpening": 0
+        }
+    },
+    "lineBreak": {
+        "before": {
+            "EndOfFile": 2
+        }
+    }
+}

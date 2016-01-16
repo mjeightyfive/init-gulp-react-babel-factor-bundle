@@ -1,0 +1,49 @@
+{
+    "name": "init-react-babel-factor-bundle",
+    "dependencies": {
+        "jquery": "~2.2.0",
+        "modernizr": "~3.3.1",
+        "respond": "~1.4.2",
+        "spinjs": "~2.0.2",
+        "bootstrap-sass": "~3.3.6",
+        "spin.js": "spinjs#~2.3.2"
+    },
+    "devDependencies": {
+        "susy": "~2.2.11",
+        "compass-mixins": "~1.0.2",
+        "sinon": "~1.17.2",
+        "should": "~8.1.1",
+        "chai": "~3.4.2"
+    },
+    "resolutions": {
+        "jquery": "~2.2.0",
+        "modernizr": "~3.3.1",
+        "sinon": "~1.17.2",
+        "should": "~8.1.1",
+        "chai": "~3.4.2"
+    },
+    "authors": [
+    "@mjeightyfive"
+  ],
+    "description": "Initial setup for ES6 React project with Babel and module splitting with factor-bundle.",
+    "main": "",
+    "moduleType": [
+    "es6"
+  ],
+    "keywords": [
+    "es6",
+    "react",
+    "babel",
+    "factor-bundle"
+  ],
+    "license": "MIT",
+    "homepage": "",
+    "private": true,
+    "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

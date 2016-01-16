@@ -1,0 +1,28 @@
+/* Base Color */
+
+$white: #fff;
+$black: #000;
+$salmon: #d67972;
+$choco: #63382d;
+$banana: #dcbc25;
+$grapefruit: #dba123;
+$brownie: #2e140b;
+$light-grey: #959595;
+$dark-grey: #252525;
+
+$base: $grapefruit;
+
+/* Subtle Color Scheme */
+
+$lighter: lighten(adjust-hue($base, 5), 10%);
+$light: lighten(adjust-hue($base, 10), 20%);
+$medium: $base;
+$dark: darken(adjust-hue($base, -5), 10%);
+$darker: darken(adjust-hue($base, -10), 20%);
+
+/* Complementary Color Scheme */
+
+$complement1: adjust-hue($base, 180);
+$complement2: darken(adjust-hue($base, 180), 5%);
+$lighten1: lighten($base, 15%);
+$lighten2: lighten($base, 30%);

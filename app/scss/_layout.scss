@@ -1,0 +1,35 @@
+// devices variables for partials/breakpoint-for-libsass
+$handheld: 320px;
+$handheld-landscape: (min-width 320px) (orientation landscape);
+$handheld-portrait: (max-width 320px) (orientation portrait);
+$tablet: 600px;
+$tablet-landscape: (min-width 600px) (orientation landscape);
+$tablet-portrait: (min-width 600px) (orientation portrait);
+$tablet-large: 768px;
+$tablet-large-landscape: (min-width 768px) (orientation landscape);
+$tablet-large-portrait: (min-width 768px) (orientation portrait);
+$desktop: 1224px;
+$desktop-large: 1824px;
+
+// susy grid setup
+$susy: (
+    columns: 12,
+    gutters: (0.5),
+    math: fluid,
+    output: float,
+    gutter-position: after,
+    global-box-sizing: border-box,
+);
+
+    // ^^^ susy debug ^^^
+    // debug: (
+    //     image: show,
+    //     output: overlay,
+    //     toggle: top right,
+    // ),
+
+@include border-box-sizing;
+
+.container {
+    @include container();
+}

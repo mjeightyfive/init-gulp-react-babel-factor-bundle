@@ -1,0 +1,50 @@
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$file-path}.woff') format('woff'),
+           url('#{$file-path}.ttf') format('truetype'),
+           url('#{$file-path}.svg##{$font-family}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+  // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: $font-family;
+        src: url('#{$file-path}.svg##{$font-family}') format('svg');
+    }
+  }
+}
+
+@include font-face(ZapfinoOne-One, '../fonts/ZapfinoOne', 400, normal);
+
+@mixin Zapfino {
+  font-family: 'Zapfino', arial, sans-serif;
+}
+
+@include font-face(Karma-Regular, '../fonts/Karma-Regular', 400, normal);
+
+@mixin Karma-Regular {
+  font-family: 'Karma-Regular', arial, sans-serif;
+}
+
+@include font-face(Karma-Regular, '../fonts/Karma-Regular', 400, normal);
+
+@mixin Karma-Regular {
+  font-family: 'Karma-Regular', arial, sans-serif;
+}
+
+@include font-face(Roboto-Thin, '../fonts/Roboto-Thin', 400, normal);
+
+@mixin Roboto-Thin {
+  font-family: 'Roboto-Thin', arial, sans-serif;
+}
+
+@include font-face(OpenSans-Light, '../fonts/OpenSans-Light', 400, normal);
+
+@mixin OpenSans-Light {
+  font-family: 'OpenSans-Light', arial, sans-serif;
+}
+

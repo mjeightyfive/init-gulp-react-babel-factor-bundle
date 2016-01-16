@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test</title>
+        <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+        <script type="text/javascript" src="../node_modules/mocha/mocha.js"></script>
+        <script type="text/javascript" src="../node_modules/sinon/lib/sinon.js"></script>
+        <script type="text/javascript" src="../bower_components/should/should.min.js"></script>
+        <script type="text/javascript" src="../bower_components/chai/chai.js"></script>
+        <script>
+            mocha.setup('bdd');
+            mocha.reporter('html');
+        </script>
+        <script type="text/javascript" src="../dist/init-lib.js"></script>
+        <script type="text/javascript" src="./sample.test.js"></script>
+    </head>
+    <body>
+        <div id="mocha"></div>
+        <script type="text/javascript">
+            if (window.mochaPhantomJS) mochaPhantomJS.run();
+            else mocha.run();
+        </script>
+    </body>
+</html>
