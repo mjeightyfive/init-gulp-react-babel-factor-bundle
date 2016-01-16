@@ -1,6 +1,6 @@
-# init-react-babel
+# init-react-babel-factor-bundle
 
-> Initial setup for creating a simple react app using Babel.
+> Initial setup for creating a react app using Babel and factor-bundle.
 
 ## Install
 
@@ -34,6 +34,7 @@
 - eslint
 - scss lint
 - Babel
+- factor-bundle
 
 ## License
 
